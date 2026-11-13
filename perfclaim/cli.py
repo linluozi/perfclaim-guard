@@ -110,7 +110,7 @@ def run_demo() -> int:
     print("\n[buggy claim]   fast, but drops the last element")
     print(f"  differential: {buggy_diff.compared} compared, "
           f"{len(buggy_diff.mismatches)} mismatches")
-    print(f"  witness     : input={witness['input'][:60]}... "
+    print(f"  witness     : offset={witness['offset']} "
           f"ref={witness['reference']} cand={witness['candidate']}")
     print(f"  verdict     : {'PASS' if buggy_verdict['pass'] else 'FAIL'} "
           f"{buggy_verdict['failed_gates'] or ''}")

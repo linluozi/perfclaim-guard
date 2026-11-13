@@ -34,7 +34,7 @@ only when the honest claim passes **and** both bad claims are rejected.
 [honest claim]  set-membership instead of list membership
   inputs      : 2000/2000 distinct
   differential: 1200 compared, 0 mismatches
-  median      : 0.2497 ms -> 0.0149 ms = 16.79x  (p25/p75 0.0149/0.0150)
+  median      : 0.2425 ms -> 0.0148 ms = 16.40x  (p25/p75 0.0148/0.0149)
   verdict     : PASS
 
 [fraud claim]   2,000 'random' documents, seed reset inside the factory
@@ -44,7 +44,7 @@ only when the honest claim passes **and** both bad claims are rejected.
 
 [buggy claim]   fast, but drops the last element
   differential: 1200 compared, 1200 mismatches
-  witness     : offset=2397 ref=…"tok186797643","tok748536559"] cand=…"tok186797643"]
+  witness     : offset=285 ref=…"tok186797643","tok748536559"] cand=…"tok186797643"]
   verdict     : FAIL ['G2']
 ```
 
