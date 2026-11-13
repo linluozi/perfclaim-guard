@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "perfclaim"
+version = "0.1.0"
+description = "Audit performance claims: distinct inputs, byte-exact diffs, real corpus, hunk attribution"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "linluozi"}]
+dependencies = []
+
+[project.scripts]
+perfclaim = "perfclaim.cli:main"
+
+[tool.setuptools]
+packages = ["perfclaim"]
